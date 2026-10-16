@@ -66,7 +66,7 @@ L'utilisation de l'outil `exiftool` sur les différents fichiers du blog a permi
 * 🚩 **Flag 6 (L'image double) :** `ACME{binwalk_zip_planque}`  
   Découvert en analysant le fichier `logo.png` avec l'outil `binwalk`. L'image dissimulait une archive ZIP cachée contenant un fichier secret `secret.txt` qui a été extrait via la commande `binwalk -e`.
 * 🚩 **Flag 7 (La chaîne faussement chiffrée) :** `ACME{base64_facile_a_lire}`  
-  Trouvé dans le fichier de configuration `notes.txt`. La chaîne n'était pas chiffrée mais simplement encodée. Elle a été lue à l'aide de la commande `echo "QUNNRXtiYXNlNjRfZmFjaWxlX2FFbGlyZX0=" | base64 -d`.
+  Trouvé dans le fichier de configuration `notes.txt`. La chaîne n'était pas chiffrée mais simplement encodée. Elle a été lue à l'aide de la commande `echo "QUNNRXtiYXNlNjRfZmFjaWxlX2FfbGlyZX0=" | base64 -d`.
 * 🚩 **Flag 8 (Le carré noir et blanc) :** `ACME{qr_code_scanne}`  
   *(Correspond également au Flag 9 de la mission précédente).* Représente le décodage réussi du QR Code de la section Wi-Fi invités via l'utilitaire `zbarimg`.
 
