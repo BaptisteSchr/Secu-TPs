@@ -30,6 +30,8 @@ La cible Docker ACME a été déployée et activée avec succès sur le port 808
 
 <img width="792" height="168" alt="Capture d&#39;écran 2026-10-16 154808" src="https://github.com/user-attachments/assets/159bf398-d5b7-4401-b3b8-8b735237b613" />
 
+<img width="772" height="480" alt="Capture d&#39;écran 2026-10-16 172006" src="https://github.com/user-attachments/assets/6a88476b-d118-4a28-9f6a-3322db2d0661" />
+
 <img width="787" height="489" alt="Capture d&#39;écran 2026-10-16 154920" src="https://github.com/user-attachments/assets/17bb43f4-b319-4a4d-9fca-49bc60b44d41" />
 
 
