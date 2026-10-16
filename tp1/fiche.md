@@ -36,3 +36,58 @@ La cible Docker ACME a été déployée et activée avec succès sur le port 808
 
 ### 3. Réflexion : Publication volontaire vs Fuite
 La page équipe est publiée volontairement pour des besoins professionnels. Le dossier ancien et le mot de passe Wi-Fi sur le post-it sont des fuites involontaires. Cette différence est critique car les fuites offrent des accès directs à un attaquant sans nécessiter d'exploitation complexe.
+
+## Mission 2 - Les fichiers parlent
+
+### 1. Informations extraites (Flags 3, 4, 5, 9 + Jeton Base64)
+* **Siège d'ACME (Flag 3) :** Place de l'Université, 1348 Ottignies-Louvain-la-Neuve, Belgique (Coordonnées GPS extraites de la photo : `50°40'09.84"N 4°36'51.84"E`).
+
+<img width="643" height="452" alt="Capture d&#39;écran 2026-10-16 161115" src="https://github.com/user-attachments/assets/23db6db7-f075-4030-888d-7b0070c9d08a" />
+
+<img width="438" height="39" alt="Capture d&#39;écran 2026-10-16 161151" src="https://github.com/user-attachments/assets/2eedd457-6eba-45b3-8094-ffab3241ff72" />
+
+<img width="785" height="692" alt="Capture d&#39;écran 2026-10-16 161318" src="https://github.com/user-attachments/assets/7a5bf3ea-dc4c-4bdf-b2f6-f1cdab43114f" />
+
+* **Rapport d'activité 2025 (Flag 4 & 5) :** 
+  * Auteur : `j.lefevre` (Jean Lefevre)
+  * Outil utilisé : Microsoft Word 2019
+  * Date de création : 16 octobre 2026
+  * Flag trouvé : `ACME{pdf_metadata_auteur}`
+
+ <img width="637" height="404" alt="Capture d&#39;écran 2026-10-16 161633" src="https://github.com/user-attachments/assets/8e32ea5b-50cd-4e98-a517-82b522c15d66" />
+
+
+* **Photo de la réunion :** 
+  * Auteur : `s.maes` (Sophie Maes)
+  * Outil utilisé : ACME PhotoCam 2.0
+  * Date : 28 novembre 2024
+
+<img width="653" height="508" alt="Capture d&#39;écran 2026-10-16 164443" src="https://github.com/user-attachments/assets/ee6dfacd-fc46-4381-9528-8279da4f80b3" />
+
+* **QR Code Wi-Fi (Flag 9) :** 
+  * Contenu décodé : `WIFI:S:ACME-Guest;T:WPA;P:ACME{qr_code_scanne};;`
+  * Flag trouvé : `ACME{qr_code_scanne}`
+ 
+<img width="523" height="100" alt="Capture d&#39;écran 2026-10-16 162822" src="https://github.com/user-attachments/assets/fbf62afc-ede6-4c1c-a933-f66a5a217daf" />
+
+* **Fichier confidentiel notes.txt (Jeton masqué) :**
+  * Chaîne décodée : `QUNNRXtiYXNlNjRfZmFjaWxlX2FfbGlyZX0=`
+  * Flag trouvé : `ACME{base64_facile_a_lire}`
+
+<img width="798" height="223" alt="Capture d&#39;écran 2026-10-16 162538" src="https://github.com/user-attachments/assets/b5df94e6-a24c-4d88-9128-a7fd5d6fb8d6" />
+
+<img width="536" height="111" alt="Capture d&#39;écran 2026-10-16 163254" src="https://github.com/user-attachments/assets/70a35c49-bfb0-44c1-90e3-36b0e4de4570" />
+
+
+### 2. Réponses aux questions de réflexion
+* **L'employé masqué de l'organigramme :** Une personne portant les initiales **MV** (vraisemblablement un administrateur système ou un développeur externe) a rédigé le fichier `notes.txt` présent dans le répertoire `/files/`, mais n'apparaît pas sur la vitrine officielle de l'équipe.
+* **Pourquoi une photo de téléphone les coordonnées GPS ?** Les smartphones récents utilisent le module GPS intégré pour ajouter automatiquement des balises "EXIF" (métadonnées) aux images. Cela permet de géolocaliser précisément le lieu de la prise de vue si l'utilisateur n'a pas désactivé cette option de confidentialité.
+* **Qu'est-ce qu'un fraudeur peut faire d'un nom de compte Windows ?** Un attaquant peut utiliser des structures d'identifiants (comme `j.lefevre` ou `s.maes`) pour mener des attaques ciblées d'ingénierie sociale (phishing) ou pour exécuter des attaques de force brute / credential stuffing sur les portails d'accès externes de l'entreprise (comme leur VPN en cours de migration).
+
+### 3. Profils de la cible & Faux e-mails crédibles
+* **Jean Lefevre (CEO) :** Utilise Microsoft Word 2019. Absent du 17 au 20 novembre 2026 pour le salon EuroElec à Munich.
+  * *Faux e-mail :* Un mail urgent prétextant un problème critique de licence Word 2019 juste avant son départ à Munich, ou une fausse confirmation de l'organisation EuroElec demandant une validation immédiate de document.
+* **Sophie Maes (IT) :** Travaille activement sur la migration du VPN de l'entreprise.
+  * *Faux e-mail :* Une alerte de sécurité simulée ou un message de support technique indiquant une erreur de synchronisation majeure sur le nouveau serveur VPN en cours de déploiement.
+* **Karim Haddad (Développeur) :** S'occupe de la création du nouveau site e-commerce de l'entreprise (projet en cours).
+  * *Faux e-mail :* Une fausse notification de mise à jour de sécurité pour une dépendance logicielle majeure (ex: npm, GitHub) ou un faux retour client signalant un bug d'affichage critique sur la version de test du panier e-commerce.
