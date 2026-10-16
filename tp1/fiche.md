@@ -81,13 +81,29 @@ La page équipe est publiée volontairement pour des besoins professionnels. Le 
 
 ### 2. Réponses aux questions de réflexion
 * **L'employé masqué de l'organigramme :** Une personne portant les initiales **MV** (vraisemblablement un administrateur système ou un développeur externe) a rédigé le fichier `notes.txt` présent dans le répertoire `/files/`, mais n'apparaît pas sur la vitrine officielle de l'équipe.
+
+<img width="798" height="223" alt="Capture d&#39;écran 2026-10-16 162538" src="https://github.com/user-attachments/assets/ef7eb86f-120a-4e30-9a86-590e681f59ef" />
+
 * **Pourquoi une photo de téléphone les coordonnées GPS ?** Les smartphones récents utilisent le module GPS intégré pour ajouter automatiquement des balises "EXIF" (métadonnées) aux images. Cela permet de géolocaliser précisément le lieu de la prise de vue si l'utilisateur n'a pas désactivé cette option de confidentialité.
 * **Qu'est-ce qu'un fraudeur peut faire d'un nom de compte Windows ?** Un attaquant peut utiliser des structures d'identifiants (comme `j.lefevre` ou `s.maes`) pour mener des attaques ciblées d'ingénierie sociale (phishing) ou pour exécuter des attaques de force brute / credential stuffing sur les portails d'accès externes de l'entreprise (comme leur VPN en cours de migration).
 
 ### 3. Profils de la cible & Faux e-mails crédibles
 * **Jean Lefevre (CEO) :** Utilise Microsoft Word 2019. Absent du 17 au 20 novembre 2026 pour le salon EuroElec à Munich.
   * *Faux e-mail :* Un mail urgent prétextant un problème critique de licence Word 2019 juste avant son départ à Munich, ou une fausse confirmation de l'organisation EuroElec demandant une validation immédiate de document.
+ 
+<img width="772" height="109" alt="Capture d&#39;écran 2026-10-16 165539" src="https://github.com/user-attachments/assets/a5a3c5a5-7cf1-44b7-a1ce-be4a16c9ce31" />
+
+
 * **Sophie Maes (IT) :** Travaille activement sur la migration du VPN de l'entreprise.
   * *Faux e-mail :* Une alerte de sécurité simulée ou un message de support technique indiquant une erreur de synchronisation majeure sur le nouveau serveur VPN en cours de déploiement.
+ 
+<img width="772" height="109" alt="Capture d&#39;écran 2026-10-16 165539" src="https://github.com/user-attachments/assets/87fee441-8d62-42cf-a4b3-6d9a502f067c" />
+
+<img width="792" height="514" alt="Capture d&#39;écran 2026-10-16 154840" src="https://github.com/user-attachments/assets/bdf14dae-ea6a-4d93-b010-8299e1d3b985" />
+
 * **Karim Haddad (Développeur) :** S'occupe de la création du nouveau site e-commerce de l'entreprise (projet en cours).
   * *Faux e-mail :* Une fausse notification de mise à jour de sécurité pour une dépendance logicielle majeure (ex: npm, GitHub) ou un faux retour client signalant un bug d'affichage critique sur la version de test du panier e-commerce.
+
+<img width="591" height="290" alt="Capture d&#39;écran 2026-10-16 162233" src="https://github.com/user-attachments/assets/db0fba08-0aa1-4869-a6a9-8281ab4f531f" />
+
+<img width="792" height="514" alt="Capture d&#39;écran 2026-10-16 154840" src="https://github.com/user-attachments/assets/68d407bd-a23a-416b-8299-b3eada0c6d20" />
