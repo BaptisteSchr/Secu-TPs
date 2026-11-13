@@ -1,10 +1,10 @@
-# TP3 — Attaques réseau : ARP, DNS, TCP, qui croit qui ?
+# TP3 - Attaques réseau : ARP, DNS, TCP, qui croit qui ?
 
 * **Environnement :** Machine virtuelle Kali Linux & Laboratoires Docker SEED (`10.9.0.0/24`)
 * **Référentiel MITRE ATT&CK :** 
-  * `T1557.002` — ARP Cache Poisoning & `T1040` — Network Sniffing (*Credential Access, Collection*)
-  * `T1557` — Adversary-in-the-Middle (*Credential Access, Collection*)
-  * `T1499.001` — OS Exhaustion Flood (*Impact*)
+  * `T1557.002` - ARP Cache Poisoning & `T1040` - Network Sniffing (*Credential Access, Collection*)
+  * `T1557` - Adversary-in-the-Middle (*Credential Access, Collection*)
+  * `T1499.001` - OS Exhaustion Flood (*Impact*)
 
 ---
 
@@ -57,7 +57,7 @@
 
 ---
 
-## Exercice 3 : Rendre un service indisponible — TCP SYN Flood
+## Exercice 3 : Rendre un service indisponible - TCP SYN Flood
 
 ### 1. Ce que j'ai fait
 * Vérification que la protection par SYN cookies était bien désactivée (`net.ipv4.tcp_syncookies = 0`) sur la victime (`victim-10.9.0.5`), et ajustement de la taille de file d'attente (`net.core.somaxconn = 8`) pour reproduire la saturation.
