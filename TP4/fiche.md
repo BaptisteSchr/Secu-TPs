@@ -1,4 +1,4 @@
-# Fiche de Synthèse — TP4 Sécurité Web (Remise & Révision Examen)
+# Fiche de Synthèse - TP4 Sécurité Web (Remise & Révision Examen)
 
 ## 1. Remise Moodle : Preuve, Mécanisme et Défense
 
